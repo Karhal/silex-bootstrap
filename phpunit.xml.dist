@@ -11,7 +11,7 @@
          bootstrap="./src/bootstrap.php"
         >
     <testsuites>
-        <testsuite name="Mindbaz Manager Test Suite">
+        <testsuite name="My App Test Suite">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
