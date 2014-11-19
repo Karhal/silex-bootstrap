@@ -1,0 +1,16 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    {% set flashBag =  app.session.getFlashBag.get('message') %}
+
+    {%  if flashBag|length > 0 %}
+        <div class="flashBag alert alert-success alert-dismissible" role="alert">
+            {% for message in flashBag %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {%  include "form.html.twig" %}
+
+{% endblock %}
